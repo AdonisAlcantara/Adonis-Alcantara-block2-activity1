@@ -15,4 +15,6 @@ import com.alcantara.adonis.block2.p1.quiz.ui.theme.AdonisAlcantaraBlock2QuizThe
 
 class MainActivity : ComponentActivity() {
     private lateinit var nextButton: Button
+
+    private val timeZone = java.util.TimeZone.getTimeZone("Asia/Manila")
 }

@@ -12,9 +12,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.alcantara.adonis.block2.p1.quiz.ui.theme.AdonisAlcantaraBlock2QuizTheme
+import java.text.SimpleDateFormat
+import java.util.Locale
 
 class MainActivity : ComponentActivity() {
     private lateinit var nextButton: Button
 
     private val timeZone = java.util.TimeZone.getTimeZone("Asia/Manila")
+    private val format = SimpleDateFormat("yyyy-MM-dd h:mm a", Locale.US)
+    private val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.US)
 }

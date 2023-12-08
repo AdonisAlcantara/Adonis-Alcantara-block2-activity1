@@ -1,6 +1,7 @@
 package com.alcantara.adonis.block2.p1.quiz
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,34 +14,5 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.alcantara.adonis.block2.p1.quiz.ui.theme.AdonisAlcantaraBlock2QuizTheme
 
 class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            AdonisAlcantaraBlock2QuizTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
-            }
-        }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    AdonisAlcantaraBlock2QuizTheme {
-        Greeting("Android")
-    }
+    private lateinit var nextButton: Button
 }
